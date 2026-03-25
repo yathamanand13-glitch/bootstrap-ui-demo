@@ -1,0 +1,116 @@
+/* Base */
+body {
+    background-color: #ECF0F1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar (minimal enhancement, no conflict) */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00c3ff !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    margin-top: 10px;
+
+    background: url('https://picsum.photos/1600/900') center/cover no-repeat;
+}
+
+/* Overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(52, 73, 94, 0.85);
+    z-index: 1;
+}
+
+/* Content above overlay */
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Text shadow */
+.hero-section h1,
+.hero-section p {
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Carousel */
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-caption {
+    background: rgba(52, 73, 94, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Cards */
+.card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #34495E;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2C3E50;
+}
+
+/* Hero Button */
+.btn-light {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+/* CTA */
+.cta-section {
+    background-color: #34495E;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+}
+
+/* Selection */
+::selection {
+    background-color: #34495E;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #34495E;
+    color: #ffffff;
+}
